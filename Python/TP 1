@@ -5,3 +5,69 @@ C = int(input("Donner C : "))
 A, B, C = C, A, B
 
 print("A =", A, "B =", B, "C =", C)
+
+
+
+
+
+HT = float(input("Donner le prix HT d'un article : "))
+NA = int(input("Donner le nombre d'articles : "))
+TVA = float(input("Donner le taux de TVA (ex : 0.2 pour 20%) : "))
+
+TTC = NA * HT * (1 + TVA)
+
+print("Le prix total TTC est :", TTC)
+
+
+
+
+S = int(input("Donner une somme en dirhams : "))
+
+b100 = S // 100
+r100 = S % 100
+
+b50 = r100 // 50
+r50 = r100 % 50
+
+b10 = r50 // 10
+r10 = r50 % 10
+
+p2 = r10 // 2
+r2 = r10 % 2
+
+p1 = r2
+
+print("Billets de 100 DH :", b100)
+print("Billets de 50 DH  :", b50)
+print("Billets de 10 DH  :", b10)
+print("Pièces de 2 DH    :", p2)
+print("Pièces de 1 DH    :", p1)
+
+
+
+
+
+a = float(input("Donner le premier nombre : "))
+b = float(input("Donner le deuxième nombre : "))
+
+if a == 0 or b == 0:
+    print("Le produit est nul.")
+elif (a > 0 and b > 0) or (a < 0 and b < 0):
+    print("Le produit est positif.")
+else:
+    print("Le produit est négatif.")
+
+
+
+
+
+age = int(input("Donner l'âge : "))
+genre = input("Donner le genre (H pour homme, F pour femme) : ")
+
+if (genre == "H" or genre == "h") and age > 18:
+    print("Cette personne paye l'impôt.")
+elif (genre == "F" or genre == "f") and 18 <= age <= 40:
+    print("Cette personne paye l'impôt.")
+else:
+    print("Cette personne ne paye pas l'impôt.")
+
