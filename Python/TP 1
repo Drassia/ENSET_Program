@@ -1,0 +1,7 @@
+A = int(input("Donner A : "))
+B = int(input("Donner B : "))
+C = int(input("Donner C : "))
+
+A, B, C = C, A, B
+
+print("A =", A, "B =", B, "C =", C)
