@@ -1,3 +1,4 @@
+EX1
 A = int(input("Donner A : "))
 B = int(input("Donner B : "))
 C = int(input("Donner C : "))
@@ -9,7 +10,7 @@ print("A =", A, "B =", B, "C =", C)
 
 
 
-
+EX2
 HT = float(input("Donner le prix HT d'un article : "))
 NA = int(input("Donner le nombre d'articles : "))
 TVA = float(input("Donner le taux de TVA (ex : 0.2 pour 20%) : "))
@@ -20,7 +21,7 @@ print("Le prix total TTC est :", TTC)
 
 
 
-
+EX3
 S = int(input("Donner une somme en dirhams : "))
 
 b100 = S // 100
@@ -46,7 +47,7 @@ print("Pièces de 1 DH    :", p1)
 
 
 
-
+EX4
 a = float(input("Donner le premier nombre : "))
 b = float(input("Donner le deuxième nombre : "))
 
@@ -60,7 +61,7 @@ else:
 
 
 
-
+EX5
 age = int(input("Donner l'âge : "))
 genre = input("Donner le genre (H pour homme, F pour femme) : ")
 
