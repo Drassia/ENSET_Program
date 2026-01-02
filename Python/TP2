@@ -59,3 +59,75 @@ print("La moyenne est :", moyenne)
 print("La valeur maximale est :", maximum)
 
 
+EX3
+
+
+
+qte = int(input("Donner la quantité d'articles achetés : "))
+pu_normal = float(input("Donner le prix unitaire normal : "))
+
+
+if qte > 100:
+    pu = 0.6 * pu_normal   
+else:
+    pu = pu_normal
+
+
+total = qte * pu
+
+
+print("Le prix à payer est :", total)
+
+
+EX4
+
+
+import math  
+
+
+Ax = float(input("Abscisse de A : "))
+Ay = float(input("Ordonnée de A : "))
+
+Bx = float(input("Abscisse de B : "))
+By = float(input("Ordonnée de B : "))
+
+Cx = float(input("Abscisse de C : "))
+Cy = float(input("Ordonnée de C : "))
+
+Dx = float(input("Abscisse de D : "))
+Dy = float(input("Ordonnée de D : "))
+
+Ex = float(input("Abscisse de E : "))
+Ey = float(input("Ordonnée de E : "))
+
+
+dA = math.sqrt(Ax**2 + Ay**2)
+dB = math.sqrt(Bx**2 + By**2)
+dC = math.sqrt(Cx**2 + Cy**2)
+dD = math.sqrt(Dx**2 + Dy**2)
+dE = math.sqrt(Ex**2 + Ey**2)
+
+
+dmin = dA
+point_proche = "A"
+
+if dB < dmin:
+    dmin = dB
+    point_proche = "B"
+
+if dC < dmin:
+    dmin = dC
+    point_proche = "C"
+
+if dD < dmin:
+    dmin = dD
+    point_proche = "D"
+
+if dE < dmin:
+    dmin = dE
+    point_proche = "E"
+
+
+print("Le point le plus proche du centre O est :", point_proche)
+
+
