@@ -1,0 +1,61 @@
+
+
+EX1
+
+
+moyenne = float(input("Donner la moyenne de l'étudiant (sur 20) : "))
+
+
+if 16 <= moyenne < 20:
+    print("Mention TRES BIEN")
+elif 14 <= moyenne < 16:
+    print("Mention BIEN")
+elif 12 <= moyenne < 14:
+    print("Mention ASSEZ BIEN")
+elif 10 <= moyenne < 12:
+    print("Mention PASSABLE")
+elif 5 <= moyenne < 10:
+    print("Mention INSUFFISANT")
+elif 0 <= moyenne < 5:
+    print("Mention TRES INSUFFISANT")
+else:
+    print("Moyenne invalide")
+
+
+EX2
+
+
+
+a = int(input("Donner le premier entier : "))
+b = int(input("Donner le deuxième entier : "))
+c = int(input("Donner le troisième entier : "))
+d = int(input("Donner le quatrième entier : "))
+
+
+somme = a + b + c + d
+produit = a * b * c * d
+moyenne = somme / 4
+
+
+if a > b:
+    max1 = a
+else:
+    max1 = b
+
+if c > d:
+    max2 = c
+else:
+    max2 = d
+
+if max1 > max2:
+    maximum = max1
+else:
+    maximum = max2
+
+
+print("La somme est :", somme)
+print("Le produit est :", produit)
+print("La moyenne est :", moyenne)
+print("La valeur maximale est :", maximum)
+
+
